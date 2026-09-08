@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Outfit', 'Arial', sans-serif;
-    background-color: #f0f4f8;
+    background-color: #cfeaf7;
     /* Color de fondo de la página */
 
     /* ESTRUCTURA DE CENTRADO (FLEXBOX) */
@@ -30,7 +30,7 @@ body {
    2. CONTENEDOR CENTRAL RESPONSIVO (CARD)
    ========================================================================== */
 .card {
-    background-color: #ffffff;
+    background-color: #ffd2ee;
 
     /* RESPONSIVIDAD */
     width: 90%;
@@ -44,4 +44,130 @@ body {
     padding: 40px;
     text-align: center;
     /* Centra los textos que pongas dentro por defecto */
+}
+
+/* ==========================================================================
+   3. MENÚ DE NAVEGACIÓN SUPERIOR
+   ========================================================================== */
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea los enlaces a la derecha */
+    gap: 20px;
+    /* Espacio entre cada enlace */
+    margin-bottom: 25px;
+    /* Separación con el avatar */
+}
+
+.nav-link {
+    text-decoration: none;
+    /* Quita el subrayado */
+    color: #64748b;
+    /* Color gris moderno */
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-bottom: 4px;
+}
+
+.nav-link:hover {
+    color: #daa6f8;
+    /* Color al pasar el mouse */
+}
+
+.nav-link.active {
+    color: #2563eb;
+    font-weight: 700;
+    border-bottom: 2px solid #2563eb;
+    /* Línea indicadora de página actual */
+}
+
+/* ==========================================================================
+   4. FOTO DE PERFIL / AVATAR
+   ========================================================================== */
+#avatar {
+    margin: 0 auto 20px;
+    /* Centra el contenedor horizontalmente */
+    width: 140px;
+    /* Tamaño fijo para que no se deforme */
+    height: 140px;
+}
+
+#avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* Convierte la imagen en círculo perfecto */
+    object-fit: cover;
+    /* Evita que la foto se estire */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra elegante */
+}
+
+/* ==========================================================================
+   5. JERARQUÍA DE TEXTOS Y BIOGRAFÍA
+   ========================================================================== */
+#bio h1 {
+    font-size: 1.7rem;
+    color: #1e293b;
+    /* Azul oscuro / casi negro legible */
+    margin-bottom: 6px;
+}
+
+#bio .rol {
+    font-size: 1rem;
+    color: #1cffff;
+    /* Color de acento */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#bio hr {
+    width: 50px;
+    /* Ancho corto para la línea decorativa */
+    height: 3px;
+    background-color: #ff6ebe;
+    /* Mismo color de acento */
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto 18px;
+    /* Centrada */
+}
+
+#bio .descripcion {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    /* Espaciado de lectura cómodo */
+    color: #475569;
+    margin-bottom: 28px;
+}
+
+/* ==========================================================================
+   6. ENLACES Y BOTONES DE CONTACTO
+   ========================================================================== */
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-link {
+    text-decoration: none;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: #ff6ebe;
+    /* Combina con tu línea rosada */
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 110, 190, 0.3);
 }
