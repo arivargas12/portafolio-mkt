@@ -71,12 +71,12 @@ body {
 }
 
 .nav-link:hover {
-    color: #dffb83;
+    color: #7c09ef;
     /* Color al pasar el mouse */
 }
 
 .nav-link.active {
-    color: #8125eb;
+    color: #8d4fd4;
     font-weight: 700;
     border-bottom: 2px solid #7e25eb;
     /* Línea indicadora de página actual */
@@ -387,4 +387,4 @@ body {
     .projects-grid {
         grid-template-columns: 1fr;
     }
-}
+}
