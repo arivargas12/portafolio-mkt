@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Arianna Vargas</title>
+    <!-- Vinculación del archivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Tipografía desde Google Fonts (Outfit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR CENTRAL (TARJETA CONTACTO) -->
+    <main class="card card-contacto">
+
+        <!-- Menú de Navegación Superior -->
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="proyectos.html" class="nav-link">Proyectos</a>
+            <a href="contacto.html" class="nav-link active">Contacto</a>
+        </nav>
+
+        <div class="contact-container">
+            <h2>Hablemos</h2>
+            <hr class="divider">
+            <p class="section-desc">¿Tienes un proyecto en mente o te gustaría colaborar? Envíame un mensaje y conversemos sobre cómo impulsar tu marca.</p>
+
+            <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Pronto me pondré en contacto.');">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué te puedo ayudar?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+
+            <div id="links" style="margin-top: 25px;">
+                <a href="https://www.linkedin.com/in/arianna-vargas-jiménez-210b1036b/" target="_blank" class="btn-link">LinkedIn</a>
+                <a href="https://www.instagram.com/mnk.arii/" target="_blank" class="btn-link">Instagram</a>
+                <a href="https://wa.me/56926053711" target="_blank" class="btn-link">WhatsApp</a>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
