@@ -7,6 +7,8 @@
     <title>Contacto - Arianna Vargas</title>
     <!-- Vinculación del archivo CSS externo -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Librería AOS para animaciones al hacer scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Tipografía desde Google Fonts (Outfit) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,11 +31,11 @@
 
         <!-- Sección de Contacto -->
         <section class="contact-container">
-            <h2>Contáctame</h2>
+            <h2 data-aos="fade-down">Contáctame</h2>
             <hr class="divider">
             <p class="section-desc">¿Quieres saber más sobre mis trabajos?</p>
 
-            <form class="contact-form" action="#" method="POST"
+            <form class="contact-form" action="#" method="POST" data-aos="zoom-in" data-aos-delay="100"
                 onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Pronto me pondré en contacto.');">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
@@ -53,7 +55,7 @@
                 <button type="submit" class="btn-submit">Enviar Mensaje</button>
             </form>
 
-            <div id="links" style="margin-top: 25px;">
+            <div id="links" style="margin-top: 25px;" data-aos="fade-up" data-aos-delay="200">
                 <a href="https://www.linkedin.com/in/arianna-vargas-jiménez-210b1036b/" target="_blank"
                     class="btn-social linkedin" aria-label="LinkedIn" title="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
@@ -75,12 +77,21 @@
             </div>
         </section>
 
-        <!-- Pie de página semántico -->
-        <footer class="site-footer">
+        <!-- Pie de página semántico con animación AOS -->
+        <footer class="site-footer" data-aos="fade-up" data-aos-delay="300">
             <p>&copy; 2026 Arianna Vargas · ¡Conversemos!</p>
         </footer>
 
     </main>
+
+    <!-- Librería JavaScript de AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 
 </body>
 

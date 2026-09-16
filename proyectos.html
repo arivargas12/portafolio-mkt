@@ -7,6 +7,8 @@
     <title>Mis Proyectos - Arianna Vargas</title>
     <!-- Vinculación del archivo CSS externo -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Librería AOS para animaciones al hacer scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Tipografía desde Google Fonts (Outfit) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +31,13 @@
 
         <!-- Sección de Proyectos -->
         <section class="projects-container">
-            <h2>Mis Proyectos</h2>
+            <h2 data-aos="fade-down">Mis Proyectos</h2>
             <hr class="divider">
             <p class="section-desc">Te presento mi portafolio de proyectos.</p>
 
             <div class="projects-grid">
                 <!-- Proyecto 1: Social Ads -->
-                <article class="project-card">
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/Proyecto 1.png" alt="Lash by Ash">
                     <div class="project-info">
                         <span class="project-tag">RRSS</span>
@@ -47,7 +49,7 @@
                 </article>
 
                 <!-- Proyecto 2: Google Ads -->
-                <article class="project-card">
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <img src="img/Proyecto 2.png" alt="Swarovski">
                     <div class="project-info">
                         <span class="project-tag">E-commerce</span>
@@ -59,7 +61,7 @@
                 </article>
 
                 <!-- Proyecto 3: Landing Page -->
-                <article class="project-card">
+                <article class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <img src="img/Proyecto 3.png" alt="Plan Valpo Seguro">
                     <div class="project-info">
                         <span class="project-tag">Nuevo proyecto</span>
@@ -73,12 +75,21 @@
             </div>
         </section>
 
-        <!-- Pie de página semántico -->
-        <footer class="site-footer">
+        <!-- Pie de página semántico con animación AOS -->
+        <footer class="site-footer" data-aos="fade-up" data-aos-delay="400">
             <p>&copy; 2026 Arianna Vargas · Portafolio de Marketing Digital</p>
         </footer>
 
     </main>
+
+    <!-- Librería JavaScript de AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 
 </body>
 

@@ -7,6 +7,8 @@
     <title>Mi Portafolio - Tarjeta de Presentación</title>
     <!-- Vinculación del archivo CSS externo -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Librería AOS para animaciones al hacer scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Opcional: Tipografía desde Google Fonts (Outfit) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,13 +28,13 @@
             </nav>
         </header>
 
-        <!-- Sección Foto de perfil -->
-        <section id="avatar">
+        <!-- Sección Foto de perfil con animación AOS -->
+        <section id="avatar" data-aos="zoom-in" data-aos-duration="900">
             <img src="img/avatar.jpeg" alt="Foto de perfil de Arianna Vargas">
         </section>
 
         <!-- Sección Nombre, rol y biografía -->
-        <section id="bio">
+        <section id="bio" data-aos="fade-up" data-aos-delay="100">
             <h1>Ari Vargas</h1>
             <p class="rol">Minibar attendant Sheraton Miramar & Estudiante de Ingenieria en Marketing Digital</p>
             <hr>
@@ -43,7 +45,7 @@
         </section>
 
         <!-- Sección Enlaces y botones de redes sociales -->
-        <section id="links">
+        <section id="links" data-aos="fade-up" data-aos-delay="200">
             <a href="https://www.linkedin.com/in/arianna-vargas-jiménez-210b1036b/" target="_blank"
                 class="btn-social linkedin" aria-label="LinkedIn" title="LinkedIn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
@@ -67,17 +69,21 @@
             </a>
         </section>
 
-        <!-- Pie de página semántico -->
-        <footer class="site-footer">
+        <!-- Pie de página semántico con animación AOS -->
+        <footer class="site-footer" data-aos="fade-up" data-aos-delay="300">
             <p>&copy; 2026 Arianna Vargas · Diseñado con dedicación</p>
         </footer>
 
     </main>
 
-
-
-
-    </main>
+    <!-- Librería JavaScript de AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 
 </body>
 
