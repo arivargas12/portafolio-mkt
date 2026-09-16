@@ -148,8 +148,56 @@ body {
 #links {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    align-items: center;
+    gap: 16px;
     flex-wrap: wrap;
+}
+
+.btn-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #501891;
+    border: 2px solid #ceb0f6;
+    box-shadow: 0 4px 10px rgba(80, 24, 145, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.btn-social svg {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.3s ease;
+}
+
+.btn-social:hover {
+    transform: translateY(-3px) scale(1.08);
+    color: #ffffff;
+    box-shadow: 0 6px 16px rgba(92, 12, 99, 0.25);
+}
+
+/* Colores representativos de cada red social al pasar el cursor */
+.btn-social.linkedin:hover {
+    background-color: #0077b5;
+    border-color: #0077b5;
+}
+
+.btn-social.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    border-color: #d6249f;
+}
+
+.btn-social.whatsapp:hover {
+    background-color: #25d366;
+    border-color: #25d366;
+}
+
+.btn-social:hover svg {
+    transform: scale(1.1);
 }
 
 .btn-link {
