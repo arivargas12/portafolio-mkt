@@ -144,12 +144,47 @@ Para obtener el puntaje completo en el criterio de **Autoaprendizaje y Adaptaci�
 
 # Checklist antes de la entrega final
 
-- [ ] ¿El menú de navegación conecta correctamente las 3 páginas?
-- [ ] ¿El sitio funciona y se lee bien en celulares (sin scroll horizontal)?
-- [ ] ¿Se usó HTML semántico (`header`, `nav`, `main`, etc.)?
-- [ ] ¿Las imágenes tienen atributo `alt` y se cargan correctamente?
-- [ ] ¿El formulario de contacto tiene `label` e inputs apropiados?
-- [ ] ¿Incorporaste animaciones AOS en al menos 3 elementos?
-- [ ] ¿Tienes al menos 9 commits en total (mínimo 3 nuevos por fase)?
-- [ ] ¿Está publicado y actualizado en GitHub Pages?
-- [ ] ¿Activaste la opción **"Deployments"** en la configuración de **"About"** en tu repositorio de GitHub (haciendo clic en el engranaje ⚙️) para permitir a la profesora ver tu historial de publicación?
+- [x] ¿El menú de navegación conecta correctamente las 3 páginas?
+- [x] ¿El sitio funciona y se lee bien en celulares (sin scroll horizontal)?
+- [x] ¿Se usó HTML semántico (`header`, `nav`, `main`, `section`, `article`, `footer`)?
+- [x] ¿Las imágenes tienen atributo `alt` y se cargan correctamente?
+- [x] ¿El formulario de contacto tiene `label` e inputs apropiados?
+- [x] ¿Incorporaste animaciones AOS en al menos 3 elementos?
+- [x] ¿Tienes al menos 9 commits en total (mínimo 3 nuevos por fase)?
+- [x] ¿Está publicado y actualizado en GitHub Pages?
+- [x] ¿Activaste la opción **"Deployments"** en la configuración de **"About"** en tu repositorio de GitHub (haciendo clic en el engranaje ⚙️) para permitir a la profesora ver tu historial de publicación?
+
+---
+
+## 🛠️ Desafíos y Autoaprendizaje — Parcial 01 (Bitácora de Arianna Vargas)
+
+Como parte de esta fase final de consolidación del portafolio web personal, registré los principales desafíos técnicos que enfrenté y cómo los resolví de forma autónoma utilizando las guías de estudio del curso y documentación web:
+
+### Desafío 1: Reestructuración con HTML5 Semántico
+* **El problema:** Inicialmente, gran parte de la estructura de las páginas dependía de etiquetas genéricas `<div>`, lo que dificultaba la accesibilidad y no cumplía con los estándares modernos de la web semántica ni con los requisitos de la Parcial 01.
+* **La investigación:** Consulté la `documentacion/guia_parcial_01.md` (sección 1: Maquetación Semántica) y la `guia_html_css.md` para entender el significado y correcto uso de `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` y `<footer>`.
+* **La solución:** 
+  1. Envolví todos los menús de navegación en un `<header class="main-header">` con su respectiva etiqueta `<nav>`.
+  2. Transformé cada tarjeta de proyecto en `proyectos.html` de un `div` genérico a un `<article class="project-card">`.
+  3. Organicé el avatar, biografía, redes sociales y formulario dentro de etiquetas `<section>`.
+  4. Diseñé e incorporé un `<footer class="site-footer">` en las 3 páginas con créditos formales de autoría.
+
+### Desafío 2: Implementación de la librería de animaciones AOS (Animate On Scroll)
+* **El problema:** Necesitaba dinamizar el portafolio incorporando animaciones al hacer scroll sin que se sintieran sobrecargadas o afectaran el rendimiento de carga.
+* **La investigación:** Revisé la sección 3 de `documentacion/guia_parcial_01.md` y la documentación oficial de [AOS](https://michalsnik.github.io/aos/). Aprendí cómo enlazar la librería vía CDN sin requerir descargas pesadas en el repositorio.
+* **La solución:**
+  1. Añadí el archivo CSS de AOS en el `<head>` de `index.html`, `proyectos.html` y `contacto.html`.
+  2. Inicialicé AOS antes de cerrar el `<body>` con `AOS.init({ duration: 800, once: true });` para una experiencia sutil y elegante.
+  3. Apliqué atributos `data-aos="zoom-in"` en el avatar y formulario, `data-aos="fade-down"` en los títulos y `data-aos="fade-up"` con retardos progresivos (`data-aos-delay="100"`, `200`, `300`) en las tarjetas de proyectos para un efecto escalonado visualmente atractivo.
+
+### Desafío 3: Adaptabilidad Responsiva y Prevención de Scroll Horizontal
+* **El problema:** Al animar elementos que ingresan con AOS o al visualizar las tarjetas de proyectos en pantallas angostas de celulares, existía riesgo de desbordes o scroll horizontal.
+* **La investigación:** Consulté la `guia_diseno.md` y la lista de control de responsive design en `guia_parcial_01.md`.
+* **La solución:** 
+  1. Añadí la regla global `html, body { overflow-x: hidden; }` en `css/style.css` para neutralizar cualquier desborde provocado por transiciones o animaciones.
+  2. Verifiqué que la cuadrícula `.projects-grid` colapse a una sola columna (`grid-template-columns: 1fr;`) en móviles y que el contenedor central (`main.card`) adapte su ancho fluidamente con padding adecuado.
+
+### Desafío 4: Microinteracciones y Estados Hover con Transiciones Suaves
+* **El problema:** Lograr que los botones, enlaces e imágenes respondan de forma atractiva y natural cuando el usuario interactúa con ellos.
+* **La investigación:** Pautas de color y jerarquía de `guia_diseno.md` e interactividad CSS de `guia_parcial_01.md`.
+* **La solución:** Implementé un efecto iluminado en color lila con resplandor suave (`box-shadow` y borde lila resplandeciente) en las tarjetas de proyectos al hover, transformaciones suaves de elevación (`transform: translateY(-6px)`) y ligero zoom en las imágenes (`scale(1.02)`), logrando un diseño interactivo, femenino y profesional.

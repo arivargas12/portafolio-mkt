@@ -8,7 +8,8 @@
     /* Permite calcular bordes y paddings dentro del tamaño del elemento */
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -281,8 +282,8 @@ body {
     border-color: #b877f7;
     /* Efecto de borde iluminado en color lila con resplandor suave */
     box-shadow: 0 12px 30px rgba(80, 24, 145, 0.16),
-                0 0 20px rgba(184, 119, 247, 0.65),
-                0 0 35px rgba(206, 176, 246, 0.45);
+        0 0 20px rgba(184, 119, 247, 0.65),
+        0 0 35px rgba(206, 176, 246, 0.45);
 }
 
 .project-card img {
