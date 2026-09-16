@@ -268,13 +268,17 @@ body {
     box-shadow: 0 5px 20px rgba(80, 24, 145, 0.08);
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(214, 110, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid rgba(206, 176, 246, 0.3);
 }
 
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(80, 24, 145, 0.16);
+    border-color: #b877f7;
+    /* Efecto de borde iluminado en color lila con resplandor suave */
+    box-shadow: 0 12px 30px rgba(80, 24, 145, 0.16),
+                0 0 20px rgba(184, 119, 247, 0.65),
+                0 0 35px rgba(206, 176, 246, 0.45);
 }
 
 .project-card img {
