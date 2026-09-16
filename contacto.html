@@ -18,17 +18,20 @@
     <!-- CONTENEDOR CENTRAL (TARJETA CONTACTO) -->
     <main class="card card-contacto">
 
-        <!-- Menú de Navegación Superior -->
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="proyectos.html" class="nav-link">Proyectos</a>
-            <a href="contacto.html" class="nav-link active">Contacto</a>
-        </nav>
+        <!-- Encabezado con Menú de Navegación Superior -->
+        <header class="main-header">
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="proyectos.html" class="nav-link">Proyectos</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+            </nav>
+        </header>
 
-        <div class="contact-container">
-            <h2>Contactame</h2>
+        <!-- Sección de Contacto -->
+        <section class="contact-container">
+            <h2>Contáctame</h2>
             <hr class="divider">
-            <p class="section-desc">¿Quieres saber mas sobre mis trabajos?</p>
+            <p class="section-desc">¿Quieres saber más sobre mis trabajos?</p>
 
             <form class="contact-form" action="#" method="POST"
                 onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Pronto me pondré en contacto.');">
@@ -70,7 +73,12 @@
                     </svg>
                 </a>
             </div>
-        </div>
+        </section>
+
+        <!-- Pie de página semántico -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Arianna Vargas · ¡Conversemos!</p>
+        </footer>
 
     </main>
 

@@ -18,22 +18,24 @@
     <!-- CONTENEDOR CENTRAL (TARJETA PROYECTOS) -->
     <main class="card card-proyectos">
 
-        <!-- Menú de Navegación común -->
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="proyectos.html" class="nav-link active">Proyectos</a>
-            <a href="contacto.html" class="nav-link">Contacto</a>
-        </nav>
+        <!-- Encabezado con Menú de Navegación común -->
+        <header class="main-header">
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="proyectos.html" class="nav-link active">Proyectos</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>
+        </header>
 
         <!-- Sección de Proyectos -->
-        <div class="projects-container">
+        <section class="projects-container">
             <h2>Mis Proyectos</h2>
             <hr class="divider">
             <p class="section-desc">Te presento mi portafolio de proyectos.</p>
 
             <div class="projects-grid">
                 <!-- Proyecto 1: Social Ads -->
-                <div class="project-card">
+                <article class="project-card">
                     <img src="img/Proyecto 1.png" alt="Lash by Ash">
                     <div class="project-info">
                         <span class="project-tag">RRSS</span>
@@ -42,10 +44,10 @@
                         <a href="https://www.canva.com/design/DAHPNbspm8A/bP6kl9DsBf-o7aCKsM9HSw/edit" target="_blank"
                             class="btn-link">Ver presentación en Canva</a>
                     </div>
-                </div>
+                </article>
 
                 <!-- Proyecto 2: Google Ads -->
-                <div class="project-card">
+                <article class="project-card">
                     <img src="img/Proyecto 2.png" alt="Swarovski">
                     <div class="project-info">
                         <span class="project-tag">E-commerce</span>
@@ -54,10 +56,10 @@
                         <a href="https://www.canva.com/design/DAHOdAKuPGY/lU3Lw97rkO08gcCwKMSHAA/edit" target="_blank"
                             class="btn-link">Ver presentación en Canva</a>
                     </div>
-                </div>
+                </article>
 
                 <!-- Proyecto 3: Landing Page -->
-                <div class="project-card">
+                <article class="project-card">
                     <img src="img/Proyecto 3.png" alt="Plan Valpo Seguro">
                     <div class="project-info">
                         <span class="project-tag">Nuevo proyecto</span>
@@ -66,10 +68,15 @@
                         <a href="https://www.canva.com/design/DAHUuCc9e1U/1phsu04-NOrcLoqruPWzNA/edit" target="_blank"
                             class="btn-link">Ver presentación en Canva</a>
                     </div>
-                </div>
+                </article>
 
             </div>
-        </div>
+        </section>
+
+        <!-- Pie de página semántico -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Arianna Vargas · Portafolio de Marketing Digital</p>
+        </footer>
 
     </main>
 

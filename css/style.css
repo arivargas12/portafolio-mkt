@@ -8,6 +8,10 @@
     /* Permite calcular bordes y paddings dentro del tamaño del elemento */
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Outfit', 'Arial', sans-serif;
     background-color: #ceb0f6;
@@ -439,4 +443,22 @@ body {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* ==========================================================================
+   10. PIE DE PÁGINA (FOOTER SEMÁNTICO)
+   ========================================================================== */
+.site-footer {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(214, 110, 255, 0.35);
+    font-size: 0.85rem;
+    color: #601b53;
+    text-align: center;
+}
+
+.site-footer p {
+    font-weight: 500;
+    opacity: 0.9;
+    letter-spacing: 0.2px;
 }
